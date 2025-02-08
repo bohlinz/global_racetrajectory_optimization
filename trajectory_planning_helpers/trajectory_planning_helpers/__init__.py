@@ -29,5 +29,5 @@ import trajectory_planning_helpers.calc_normal_vectors_ahead
 import trajectory_planning_helpers.import_veh_dyn_info_2
 import trajectory_planning_helpers.nonreg_sampling
 import trajectory_planning_helpers.interp_track
-import trajectory_planning_helpers.seq_vel_profile
-import trajectory_planning_helpers.cal_curv_points
+import trajectory_planning_helpers.seq_vel_profile #added
+import trajectory_planning_helpers.cal_curv_points #added

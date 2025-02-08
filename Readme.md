@@ -2,7 +2,9 @@
 [1] make sure python 3.X is used  
 [2] check dependency  
 [3] run  `pip3 install -r /path/to/requirements.txt`   
-[4] for Anaconda, make sure the [trajectory_planning_helpers] folder in this repo is in /user/anaconda3/lib/python3.X/site-packages (e.g, in trajectory_planning_helpers folder, `cp  * /home/username/miniconda3/envs/glb_plan/lib/python3.9/site-packages/trajectory_planning_helpers`/)
+[4] for Anaconda, make sure the [trajectory_planning_helpers] folder in this repo is in /user/anaconda3/lib/python3.X/site-packages (e.g, in trajectory_planning_helpers folder, `cp  * /home/username/miniconda3/envs/glb_plan/lib/python3.9/site-packages/trajectory_planning_helpers`/)  
+if there is error like "AttributeError: module 'trajectory_planning_helpers' has no attribute 'cal_curv_points'", check the `__init__.py` file in repo.
+
 
 # Additional Data 
 [1] kanel_cl.npz stores the kappa,section length and velocity data for Shanghai closed track;  

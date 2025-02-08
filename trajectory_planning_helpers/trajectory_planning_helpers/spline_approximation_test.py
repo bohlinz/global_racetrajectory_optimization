@@ -10,7 +10,9 @@ import helper_funcs_glob
 import matplotlib.pyplot as plt
 
 
-# 平滑散点
+# 平滑散点+重采样
+# 输入： 笛卡尔坐标系的散点序列
+# 输出： 笛卡尔坐标系的重采样散点序列
 
 # ----------------------------------------------------------------------------------------------------------------------
 # DISTANCE CALCULATION FOR OPTIMIZATION --------------------------------------------------------------------------------
@@ -58,6 +60,9 @@ dists_cum_cl = np.insert(dists_cum_cl, 0, 0.0)
 
 # find B spline representation of the inserted path and smooth it in this process
 # (tck_cl: tuple (vector of knots, the B-spline coefficients, and the degree of the spline))
+# k 样条曲线的阶数
+# s 样条曲线的平滑度因子
+# per 是否闭合
 tck_cl, t_glob_cl = interpolate.splprep([track_interp_cl[:, 0], track_interp_cl[:, 1]],
                                     k = 3,
                                     s = 10,
